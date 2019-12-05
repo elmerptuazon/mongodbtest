@@ -3,22 +3,11 @@
 @section('content')
 <div class="container">
         @if(session()->has('error'))
-            <div class="alert alert-danger taskAlert">
+            <div class="alert alert-danger">
                 {{ session()->get('error') }}
-            </div>
-          @elseif(session()->has('message'))
-            <div class="alert alert-success taskAlert">
-                {{ session()->get('message') }}
             </div>
           @endif
 
-          @push('scripts')
-            <script>
-                $(document).ready(function(){
-                    $('.taskAlert').fadeOut(3000);
-                });
-            </script>
-          @endpush
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

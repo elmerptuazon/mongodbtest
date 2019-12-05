@@ -39,7 +39,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <!-- ADDED BY ELMER*** -->
   <link rel="stylesheet" type="text/css" href="{{ asset("/css/daterangepicker.css") }}" />
-  <link rel="stylesheet" href="{{ asset("/css/controlToggleBtn.css") }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset("/css/controlToggleBtn.css") }}">
 
     @yield('custom_style')
     
@@ -76,14 +76,6 @@ desired effect
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper" id="goodload">
-    <!-- Content Header (Page header) -->
-    {{--<section class="content-header">
-      <h1>
-        {{ $page_title or "OVERVIEW" }}
-                <small>{{ $page_description or null }}</small>
-      </h1>
-      <!-- You can dynamically generate breadcrumbs here -->
-    </section>--}}
 
     <!-- Main content -->
     <section class="content container-fluid" >
@@ -130,7 +122,7 @@ $(document).ready(function(){
 <!-- bootstrap datepicker -->
 <script src="{{asset ("/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js") }}"></script>
  <!-- fullCalendar 2.2.5 -->
- <script src="{{asset ("/css/moment.min.js")}}" type="text/javascript"></script>
+ <script src="{{asset ("/js/moment.min.js")}}"></script>
  <script src="{{asset ("/bower_components/fullcalendar/dist/fullcalendar.min.js")}}" type="text/javascript"></script>
  <!-- PACE -->
  <script src="{{asset ("/bower_components/PACE/pace.min.js")}}"></script>
@@ -142,7 +134,8 @@ $(document).ready(function(){
 
 <!-- Date Picker (range)-->
 
-  <script type="text/javascript" src="{{ asset("/css/daterangepicker.min.js") }}"></script>
+  <script src="{{ asset("/js/daterangepicker.min.js") }}"></script>
+
 
 @stack('scripts')
 <!-- Optionally, you can add Slimscroll and FastClick plugins.

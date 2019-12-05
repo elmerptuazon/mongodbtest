@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Redirector;
 
 class LoginCheck extends Controller
 {
@@ -43,11 +44,14 @@ class LoginCheck extends Controller
                 array_push($details['arr_login'], $val);
             }
         }
+        $cookie_name = "stp";
+        $cookie_value = $details['arr_login'][0];
+        setcookie($cookie_name, $cookie_value, time() + (10 * 365 * 24 * 60 * 60), "/");      
 
         if(empty($details['arr_login'])) {
             return redirect()->back()->with('error', 'Incorrect Credentials. Please try again.');
         } else {
-            return view('dashboard')->with(json_encode($details));
+            return redirect()->action('DashboardController@index');
         }
 
     }
