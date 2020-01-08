@@ -13,10 +13,10 @@
 
 Route::get('/', function () {
     return view('auth/login');
-})->middleware('checklogin');
-
+});
+// ->middleware('checklogin')
 Auth::routes();
 
 Route::post('/login/authenticate', 'LoginCheck@loginAuthenticate');
 
-Route::get('/dashboard', 'DashboardController@index')->middleware('checktokenexists');
+Route::get('/dashboard', 'DashboardController@index');//->middleware('checktokenexists')

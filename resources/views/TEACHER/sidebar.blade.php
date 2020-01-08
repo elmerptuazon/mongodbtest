@@ -7,7 +7,7 @@
           <img src="{{ asset('img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>{{$identity_data[1]->firstname}} {{$identity_data[2]->lastname}}</p>
+          <p>Teacher</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -27,10 +27,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"> Math</a></li>
-            <li><a href="pages/charts/morris.html"> Science</a></li>
-            <li><a href="pages/charts/flot.html"> PE</a></li>
-            <li><a href="pages/charts/inline.html"> Music</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Math</a></li>
+          <li><a href="#">Pe</a></li>
           </ul>
         </li>
 

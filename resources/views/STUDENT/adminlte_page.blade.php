@@ -68,10 +68,10 @@ desired effect
 <div class="wrapper" >
 
   <!-- Main Header -->
-  @include('header')
+  @include('STUDENT.header')
 
   <!-- Left side column. contains the logo and sidebar -->
-  @include('sidebar')
+  @include('STUDENT.sidebar')
  
 
   <!-- Content Wrapper. Contains page content -->
@@ -96,7 +96,7 @@ desired effect
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  @include('footer')
+  @include('STUDENT.footer')
 
   <!-- Add the sidebar's background. This div must be placed
   immediately after the control sidebar -->

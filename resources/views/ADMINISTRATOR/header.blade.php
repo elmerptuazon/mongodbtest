@@ -96,10 +96,16 @@
             <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <i class="fa fa-bell-o"></i>
-                <span class="label label-warning">10</span>
+                <span class="label label-warning">
+                    3
+                </span>
                 </a>
                 <ul class="dropdown-menu">
-                <li class="header">You have 10 notifications</li>
+                <li class="header">
+                    
+                        You have 3 notifications
+                    
+                </li>
                 <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
@@ -212,7 +218,7 @@
             <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="{{ asset('img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
-                <span class="hidden-xs">{{$identity_data[1]->firstname}} {{$identity_data[2]->lastname}}</span>
+                <span class="hidden-xs">Dan Lopez</span>
                 </a>
                 <ul class="dropdown-menu">
                 <!-- User image -->
